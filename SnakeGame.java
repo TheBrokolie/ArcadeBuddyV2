@@ -25,7 +25,7 @@ public class SnakeGame implements ArcadeGame {
     private Random random;
 
     // --- Framework Komponenten ---
-    private final Gamepad input = new EmulatorGamepad();
+    private final Gamepad input = new UsbGamepad();
     private InputWatcher watcher;
     private Timer gameTimer;
     private JFrame frame;
