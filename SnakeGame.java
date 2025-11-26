@@ -6,6 +6,7 @@ import java.io.*;
 import java.util.*;
 import java.util.List;
 import java.util.Timer;
+import framework.*;
 
 public class SnakeGame implements ArcadeGame {
 
@@ -25,7 +26,7 @@ public class SnakeGame implements ArcadeGame {
     private Random random;
 
     // --- Framework Komponenten ---
-    private final Gamepad input = new UsbGamepad();
+    private final Gamepad input = new EmulatorGamepad();
     private InputWatcher watcher;
     private Timer gameTimer;
     private JFrame frame;
@@ -74,6 +75,7 @@ public class SnakeGame implements ArcadeGame {
 
     private void setupInputWatcher() {
         watcher = new InputWatcher(input, new InputListener() {
+
             @Override
             public void onJoystick1Up() {
                 if (direction != Direction.DOWN) {
@@ -102,6 +104,56 @@ public class SnakeGame implements ArcadeGame {
                 if (direction != Direction.LEFT) {
                     direction = Direction.RIGHT;
                 }
+            }
+
+            @Override
+            public void onButtonA1Pressed() {
+
+            }
+
+            @Override
+            public void onButtonA1Released() {
+
+            }
+
+            @Override
+            public void onButtonB1Pressed() {
+
+            }
+
+            @Override
+            public void onButtonB1Released() {
+
+            }
+
+            @Override
+            public void onButtonX1Pressed() {
+
+            }
+
+            @Override
+            public void onButtonX1Released() {
+
+            }
+
+            @Override
+            public void onButtonY1Pressed() {
+
+            }
+
+            @Override
+            public void onButtonY1Released() {
+
+            }
+
+            @Override
+            public void onButtonMenuPressed() {
+
+            }
+
+            @Override
+            public void onButtonMenuReleased() {
+
             }
         });
     }
