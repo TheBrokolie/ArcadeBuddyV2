@@ -109,13 +109,13 @@ public class UsbGamepad implements Gamepad {
     }
 
     @Override
-    public Button buttonA1() { return fromMask(0x20); } // Button 1
+    public Button buttonA1() { return fromMask(0x80); } // Button 1 return fromMask(0x80)
     @Override
-    public Button buttonB1() { return fromMask(0x08); } // Button 2
+    public Button buttonB1() { return fromMask(0x40); } // Button 2 return fromMask(0x40)
     @Override
-    public Button buttonX1() { return fromMask(0x40); } // Button 3
+    public Button buttonX1() { return fromMask(0x20); } // Button 3 return fromMask(0x20)
     @Override
-    public Button buttonY1() { return fromMask(0x80); } // Button 4
+    public Button buttonY1() { return fromMask(0x10); } // Button 4 return fromMask(0x10)
 
     // --- Buttons Spieler 2 (derzeit nicht belegt) ---
     @Override
@@ -129,7 +129,7 @@ public class UsbGamepad implements Gamepad {
 
     // Menü-Taste – hier Button 5 (0x10)
     @Override
-    public Button buttonMenu() { return fromMask(0x10); }
+    public Button buttonMenu() { return fromMask(0x08); }
 
     // ===================== Joystick-Implementierungen =====================
 
