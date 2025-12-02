@@ -121,11 +121,9 @@ public class ButtonPongGame implements ArcadeGame {
         if (input.buttonX1().isPressed()) { // Button X1 (Gamepad 1) = Hoch
             paddle1Y -= PADDLE_SPEED;
         }
-
         if (input.buttonB1().isPressed()) { // Button B1 (Gamepad 1) = Runter
             paddle1Y += PADDLE_SPEED;
         }
-
         // Spieler 2 (Rechts)
         if (input.buttonX2().isPressed()) { // Button X2 (Gamepad 2) = Hoch
             paddle2Y -= PADDLE_SPEED;
