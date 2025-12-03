@@ -36,7 +36,7 @@ public class ButtonPongGame implements ArcadeGame {
     private boolean isRunning = false;
 
     // --- Framework Komponenten ---
-    private final Gamepad input = new EmulatorGamepad();
+    private final Gamepad input = new UsbGamepad();
     private InputWatcher watcher;
     private Timer gameTimer;
     private JFrame frame;
