@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="ArcadeBuddyV2">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$" />
+      <root url="jar://$USER_HOME$/Downloads/purejavahidapi-master/purejavahidapi-master/bin/purejavahidapi.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$" />
+    </SOURCES>
+  </library>
+</component>

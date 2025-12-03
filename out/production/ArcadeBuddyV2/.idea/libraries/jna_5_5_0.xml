@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="jna-5.5.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Downloads/purejavahidapi-master/purejavahidapi-master/lib/jna-5.5.0.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/purejavahidapi-master/purejavahidapi-master/lib/jna-platform-5.5.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
